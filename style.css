@@ -1,0 +1,18 @@
+table, th, td{
+        border:1px solid black;
+    }
+    div.a {
+        transform: rotate(acos(0.5));
+      }
+      
+      div.b {
+        transform: rotate(acos(1));
+      }
+      
+      div.c {
+        transform: rotate(acos(-0.5));
+      }
+      
+      div.d {
+        transform: rotate(acos(-1));
+      }
