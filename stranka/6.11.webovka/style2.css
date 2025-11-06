@@ -1,0 +1,114 @@
+header, section {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+ 
+*{
+    margin:0px;
+    padding:0px;
+    color:white;
+}
+header {
+    background: url(https://purdueglobalwriting.center/wp-content/uploads/2020/04/gettyimages-677892870.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 30px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+ 
+nav ul li:hover{
+    border-bottom: 1px solid blue;
+}
+ 
+.uvod {
+    width:50%;
+    margin:auto;
+    margin-top: 40vh;
+    text-align: center;
+}
+.uvod h1{
+font-size: 3rem;
+}
+.uvod p {
+    line-height: 2rem;
+    margin-block: 20px;
+}
+ 
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+ 
+.uvod button {
+    background-color: blue;
+}
+
+#sec-2 div {
+    width: 50px;
+}
+
+#sec2 #context {
+    background-color: lightslategray;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#sec2 #ing-container {
+    background-color: blue;
+}
+
+#context button{
+    border: 20px solid white;
+    justify-self: flex-start;
+    align-self: flex-start;
+} 
+
+#img-container {
+    background: url(Snímek\ obrazovky\ 2025-11-06\ 111814.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#sec-1 {
+    background-color: blue;
+    display: flex;
+    padding: 20% 5px;
+    gap: 5%
+}
+
+#sec-1 h1 {
+    width: 30%;
+}
+
+#grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.grid-element p{
+    line-height: 2rem;
+    margin-top: 20px;
+
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Uprising Creative — Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style67.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo">Sphene</div>
+<nav class="nav" id="nav">
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Portfolio</a>
+<a href="#">About</a>
+<a href="#" class="btn small">Contact</a>
+</nav>
+<button class="hamburger" id="hamb">☰</button>
+</div>
+</header>
+<main>
+<!-- Hero -->
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<h1>The Uprising Creative</h1>
+<p class="lead">All features you'll need to launch websites of almost any kind. Build an unique and beautiful website — never been easier.</p>
+<a class="btn primary" href="#">Discover More</a>
+</div>
+</section>
+<section class="features">
+<div class="container features-grid">
+<div class="feature">
+<div class="icon">💧</div>
+<h4>Pixel Perfect</h4>
+<p>Clean layouts and attention to detail.</p>
+</div>
+<div class="feature">
+<div class="icon">⚓</div>
+<h4>Solid Code</h4>
+<p>Stable, maintainable and semantic markup.</p>
+</div>
+<div class="feature">
+<div class="icon">🧩</div>
+<h4>Deeply Customizable</h4>
+<p>Change styles, colors and components easily.</p>
+</div>
+<div class="feature">
+<div class="icon">📱</div>
+<h4>Mobile Optimized</h4>
+<p>Responsive layout that works on all devices.</p>
+</div>
+</div>
+</section>
+<section class="cta-dark">
+<div class="container cta-grid">
+<div class="cta-text">
+<h2>Don't Hesitate, Let Out Your Creative Beast</h2>
+<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation.</p>
+<a class="btn outline" href="#">View Our Projects</a>
+</div>
+<div class="cta-image">
+
+<div class="image-grid">
+<img src="images/work1.jpg" alt="work 1">
+<img src="images/work2.jpg" alt="work 2">
+<img src="images/work3.jpg" alt="work 3">
+<img src="images/work4.jpg" alt="work 4">
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<small>© 2025 Sphene — Demo</small>
+</div>
+</footer>
+<script>
+   const hamb = document.getElementById('hamb');
+   const nav = document.getElementById('nav');
+   hamb.addEventListener('click', () => {
+     nav.classList.toggle('open');
+   });
+</script>
+</body>
+</html>

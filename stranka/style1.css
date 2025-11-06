@@ -1,0 +1,67 @@
+{
+    padding: 0;
+    margin: 0;
+}
+ 
+body {
+    background-color: #007aff;
+}
+ 
+header {
+    display: flex;
+    flex-direction: column;
+}
+ 
+header, footer, section {
+    width: 55%;
+    margin-inline: auto;
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+ 
+nav ul, nav li {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+}
+ 
+nav ul {
+    display: flex;
+    gap: 50px;
+   
+}
+ 
+nav a {
+    color:blanchedalmond;
+    text-decoration: none;
+    font-weight: 500;
+}
+ 
+nav a:hover {
+    color: white
+}
+ 
+nav img {
+    width: 40px;
+}
+ 
+.nav
+ 
+ 
+nav button:first-child {
+    background: none;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+ 
+nav button:last-child {
+    background-color: ;
+}
+ 
