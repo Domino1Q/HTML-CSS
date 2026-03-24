@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Turnaj PRO</title>
+<link rel="stylesheet" href="projekt.css">
+</head>
+<body>
+<h1>Liga Mistrů </h1>
+<div class="topbar">
+<button onclick="toggleTheme()">Dark mode</button>
+<button onclick="resetAll()" class="danger">Reset</button>
+</div>
+<div class="container">
+<div class="card">
+<h2>Týmy</h2>
+<div class="row">
+<input id="teamInput" placeholder="Název týmu">
+<button onclick="addTeam()">Přidat</button>
+</div>
+<ul id="teamList"></ul>
+</div>
+<div class="card">
+<h2>Skupina</h2>
+<button onclick="generateMatches()">Vygenerovat</button>
+<div id="matches"></div>
+</div>
+<div class="card">
+<h2>Tabulka</h2>
+<table>
+<thead>
+<tr>
+<th>#</th><th>Tým</th><th>Z</th><th>Skóre</th><th>Body</th>
+</tr>
+</thead>
+<tbody id="table"></tbody>
+</table>
+</div>
+<div class="card">
+<h2>Finále</h2>
+<div id="final"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
