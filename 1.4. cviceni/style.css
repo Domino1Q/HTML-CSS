@@ -1,0 +1,20 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+#message {
+    width: 50%;
+    background-color: blueviolet;
+    height: 90vh;
+    padding: 1px;
+}
+
