@@ -1,46 +1,111 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Turnaj PRO</title>
+
 <link rel="stylesheet" href="projekt.css">
+
 </head>
 <body>
-<h1>Liga Mistrů </h1>
-<div class="topbar">
-<button onclick="toggleTheme()">Dark mode</button>
-<button onclick="resetAll()" class="danger">Reset</button>
+
+<div class="sidebar">
+
+    <div class="logo">
+        🏆 Turnaj PRO
+    </div>
+
+    <ul>
+
+        <li class="active">🏠 Dashboard</li>
+        <li>👥 Týmy</li>
+        <li>📅 Rozpis</li>
+        <li>🏆 Playoff</li>
+
+    </ul>
+
 </div>
-<div class="container">
-<div class="card">
-<h2>Týmy</h2>
-<div class="row">
-<input id="teamInput" placeholder="Název týmu">
-<button onclick="addTeam()">Přidat</button>
+
+<div class="main">
+
+    <div class="topbar">
+
+        <button onclick="toggleTheme()">
+            🌙 Dark mode
+        </button>
+
+        <button class="danger" onclick="location.reload()">
+            Reset
+        </button>
+
+    </div>
+
+    <div class="card hero">
+
+        <div>
+
+            <h1>🏆 Turnajový systém</h1>
+
+            <p>
+                Organizace turnajů, zápasů a playoff
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>👥 Týmy</h2>
+
+            <div class="row">
+
+                <input
+                    type="text"
+                    id="teamInput"
+                    placeholder="Název týmu"
+                >
+
+                <button onclick="addTeam()">
+                    Přidat
+                </button>
+
+            </div>
+
+            <div id="teams"></div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>📅 Rozpis zápasů</h2>
+
+            <button onclick="generateMatches()">
+                Vygenerovat zápasy
+            </button>
+
+            <div id="matches"></div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🏆 Playoff pavouk</h2>
+
+        <div id="bracket" class="bracket"></div>
+
+    </div>
+
 </div>
-<ul id="teamList"></ul>
-</div>
-<div class="card">
-<h2>Skupina</h2>
-<button onclick="generateMatches()">Vygenerovat</button>
-<div id="matches"></div>
-</div>
-<div class="card">
-<h2>Tabulka</h2>
-<table>
-<thead>
-<tr>
-<th>#</th><th>Tým</th><th>Z</th><th>Skóre</th><th>Body</th>
-</tr>
-</thead>
-<tbody id="table"></tbody>
-</table>
-</div>
-<div class="card">
-<h2>Finále</h2>
-<div id="final"></div>
-</div>
-</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
